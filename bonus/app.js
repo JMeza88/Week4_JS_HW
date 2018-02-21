@@ -49,13 +49,13 @@ function makeMiddleEarth() {
     // console.log(place);
     // assign the id of the corresponding article tag as the name of the land
     place.setAttribute('id', lands[i]);
-    // console.log(place);
+    //console.log(place);
     // inside each article tag include an h1 with the name of the land
     middleEarth.appendChild(place);
     let nameOfLand = document.createElement('h1');
-    // console.log(nameOfLand);
+    //console.log(nameOfLand);
     nameOfLand.innerHTML = lands[i];
-    // console.log(nameOfLand);
+    //console.log(nameOfLand);
     place.appendChild(nameOfLand);
   }
   // append the section to the body of the DOM with: document.body.appendChild( // variable name )
@@ -64,7 +64,27 @@ function makeMiddleEarth() {
 function makeHobbits() {
   console.log('Make hobbits');
   // display an unordered list of hobbits in the shire
-  // give each hobbit a class of "hobbit"
+  var listHobbits = document.createElement("UL");
+      listHobbits.setAttribute('id', 'list-of-hobbits');
+      document.body.appendChild(listHobbits);
+//      console.log(listHobbits);
+
+    for (let i = 0; i < hobbits.length; i++) {
+    let hobbitName = document.createElement('LI');
+   // console.log(hobbitName);
+    hobbitName.setAttribute('id', hobbits[i]);
+     // give each hobbit a class of "hobbit"
+    hobbitName.setAttribute('class', "hobbit")
+    listHobbits.appendChild(hobbitName);
+    hobbitName.innerHTML = hobbits[i];
+
+    }
+
+
+ 
+
+
+
   // list the hobbits alphabetically.  Maybe use the .sort() method.
 }
 
