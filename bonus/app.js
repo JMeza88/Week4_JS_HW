@@ -81,7 +81,12 @@ function makeHobbits() {
 
 function keepItSecretKeepItSafe() {
   // create an empty div with an id of 'the-ring' and innerHTML of "The ring"
+  var theRing = document.createElement("div");
+  theRing.setAttribute('id', 'the-ring');
+  theRing.innerHTML = ("The Ring");
   // add the ring as a child of Frodo
+  document.getElementById("Frodo Baggins").appendChild(theRing);
+
 }
 
 function makeBaddies() {
