@@ -66,26 +66,17 @@ function makeHobbits() {
   // display an unordered list of hobbits in the shire
   var listHobbits = document.createElement("UL");
       listHobbits.setAttribute('id', 'list-of-hobbits');
-      document.body.appendChild(listHobbits);
-//      console.log(listHobbits);
-
-    for (let i = 0; i < hobbits.length; i++) {
+        document.body.appendChild(listHobbits);
+// list the hobbits alphabetically.  Maybe use the .sort() method.
+    for (let i = 0; i < (hobbits.sort()).length; i++) {
     let hobbitName = document.createElement('LI');
-   // console.log(hobbitName);
-    hobbitName.setAttribute('id', hobbits[i]);
+      hobbitName.setAttribute('id', hobbits[i]);
      // give each hobbit a class of "hobbit"
     hobbitName.setAttribute('class', "hobbit")
     listHobbits.appendChild(hobbitName);
     hobbitName.innerHTML = hobbits[i];
-
     }
 
-
- 
-
-
-
-  // list the hobbits alphabetically.  Maybe use the .sort() method.
 }
 
 function keepItSecretKeepItSafe() {
