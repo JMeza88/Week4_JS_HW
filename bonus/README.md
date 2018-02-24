@@ -1,4 +1,4 @@
-### This is a bonus!! But, if you REALLY want to get good at mainpulating the DOM, this would be really great for you to practice on.
+ ### This is a bonus!! But, if you REALLY want to get good at mainpulating the DOM, this would be really great for you to practice on.
 
 # Trip To MorDOMr
 
